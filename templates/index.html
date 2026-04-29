@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- Hero Section -->
+<header class="hero-section">
+    <div class="text-center">
+        <h1 class="display-3 fw-bold">SCENTS OF DISTINCTION</h1>
+        <p class="lead">Explore the exclusive collection of Xender Perfumes.</p>
+        <a href="/collection/unisex" class="btn btn-light btn-lg px-5 mt-3">Shop Now</a>
+    </div>
+</header>
+
+<!-- Featured Categories -->
+<div class="container my-5 py-5">
+    <div class="row text-center">
+        <div class="col-md-4">
+            <div class="category-box" style="background-image: url('https://images.unsplash.com/photo-1557170334-a9632e77c6e4?q=80&w=600');">
+                <div class="overlay">
+                    <a href="/collection/men" class="btn btn-outline-light">For Him</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="category-box" style="background-image: url('https://images.unsplash.com/photo-1590736704728-f4730bb30770?q=80&w=600');">
+                <div class="overlay">
+                    <a href="/collection/women" class="btn btn-outline-light">For Her</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="category-box" style="background-image: url('https://images.unsplash.com/photo-1595428774223-ef52624120d2?q=80&w=600');">
+                <div class="overlay">
+                    <a href="/collection/unisex" class="btn btn-outline-light">Unisex</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

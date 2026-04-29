@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xender Perfumes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .navbar-brand { font-weight: bold; letter-spacing: 2px; }
+        .hero-section { background: url('https://images.unsplash.com/photo-1616948055599-8239005d283b?q=80&w=1500') center/cover; height: 60vh; color: white; display: flex; align-items: center; justify-content: center; text-align: center; }
+        .perfume-card img { height: 300px; object-fit: cover; }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/">XENDER</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/collection/men">Men</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/collection/women">Women</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/collection/unisex">Unisex</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    {% block content %}{% endblock %}
+
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <p>&copy; 2026 Xender Perfumes. Crafted for Excellence.</p>
+    </footer>
+</body>
+</html>

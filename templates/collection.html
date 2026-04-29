@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container mt-5">
+    <h2 class="text-center mb-4">{{ category.capitalize() }} Collection</h2>
+    <div class="row">
+        {% for perfume in perfumes %}
+        <div class="col-md-4 mb-4">
+            <div class="card perfume-card shadow-sm">
+                <img src="{{ perfume.img }}" class="card-img-top" alt="{{ perfume.name }}">
+                <div class="card-body text-center">
+                    <h5 class="card-title">{{ perfume.name }}</h5>
+                    <p class="text-muted">{{ perfume.price }}</p>
+                    <button class="btn btn-outline-dark">View Details</button>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
